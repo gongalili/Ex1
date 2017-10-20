@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/tvintro"
+        android:layout_width="349dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="@string/intro" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/llUp"
+        android:layout_below="@+id/tvintro"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/input"
+            android:layout_toLeftOf="@+id/input"
+            android:layout_toStartOf="@+id/input"
+            android:layout_weight="0.24"
+            android:text="@string/name" />
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="117dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@+id/buttum"
+            android:layout_alignBottom="@+id/button"
+            android:layout_marginEnd="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@+id/button"
+            android:layout_toStartOf="@+id/button"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="127dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginTop="0dp"
+            android:layout_weight="1"
+            android:text="@string/name_buttom" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/llCheckbox"
+        android:layout_marginLeft="128dp"
+        android:layout_marginStart="128dp"
+        android:layout_below="@+id/line"
+        android:layout_alignLeft="@+id/tvintro"
+        android:layout_alignStart="@+id/tvintro">
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose3" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose2" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choose1" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="4dp"
+        android:layout_height="154dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_toLeftOf="@+id/radio"
+        />
+
+    <LinearLayout
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/line"
+        android:layout_toRightOf="@+id/tvintro"
+        android:layout_toEndOf="@+id/tvintro"
+        android:layout_marginLeft="51dp"
+        android:layout_marginStart="51dp">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/line"
+                android:layout_toEndOf="@+id/radio"
+                android:layout_toRightOf="@+id/radio"
+                android:text="@string/radio" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/radio2"
+                android:layout_below="@+id/radioButton3"
+                android:layout_alignLeft="@+id/radioButton3"
+                android:layout_alignStart="@+id/radioButton3" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
