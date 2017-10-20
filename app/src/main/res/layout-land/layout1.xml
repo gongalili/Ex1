@@ -63,11 +63,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:id="@+id/llCheckbox"
-        android:layout_marginLeft="128dp"
-        android:layout_marginStart="128dp"
-        android:layout_below="@+id/line"
-        android:layout_alignLeft="@+id/tvintro"
-        android:layout_alignStart="@+id/tvintro">
+        android:layout_alignBottom="@+id/line"
+        android:layout_toLeftOf="@+id/line"
+        android:layout_toStartOf="@+id/line"
+        android:layout_marginRight="107dp"
+        android:layout_marginEnd="107dp"
+        android:layout_marginBottom="18dp">
 
         <CheckBox
             android:id="@+id/checkBox3"
@@ -95,6 +96,8 @@
         android:layout_height="154dp"
         android:background="@color/colorPrimaryDark"
         android:layout_toLeftOf="@+id/radio"
+        android:layout_marginTop="@+id/llCheckbox"
+        android:layout_below="@id/llUp"
         />
 
     <LinearLayout
@@ -113,27 +116,30 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1">
-            <RadioButton
-                android:id="@+id/radioButton3"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_below="@+id/line"
-                android:layout_toEndOf="@+id/radio"
-                android:layout_toRightOf="@+id/radio"
-                android:text="@string/radio" />
 
-            <RadioButton
-                android:id="@+id/radioButton4"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:text="@string/radio2"
-                android:layout_below="@+id/radioButton3"
-                android:layout_alignLeft="@+id/radioButton3"
-                android:layout_alignStart="@+id/radioButton3" />
         </RadioGroup>
     </LinearLayout>
 
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/radio"
+        android:layout_alignTop="@+id/llCheckbox"
+        android:layout_toRightOf="@+id/line"
+        android:layout_toEndOf="@+id/line" />
 
+    <RadioButton
+        android:id="@+id/radioButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/radioButton3"
+        android:layout_alignStart="@+id/radioButton3"
+        android:layout_below="@+id/radioButton3"
+        android:text="@string/radio2" />
 
 
 </RelativeLayout>
