@@ -17,4 +17,7 @@
 
     <string name="radio2">Alternative2</string>
 
+    <string name="intro2">This activity demonstrates the use of Grid Layout with embedded image views</string>
+
+
 </resources>

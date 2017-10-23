@@ -24,9 +24,8 @@
             android:id="@+id/textViewName"
             android:layout_width="wrap_content"
             android:layout_height="20dp"
-            android:layout_alignBottom="@+id/input"
-            android:layout_toLeftOf="@+id/input"
-            android:layout_toStartOf="@+id/input"
+
+
             android:layout_weight="0.24"
             android:text="@string/name" />
 
@@ -34,12 +33,11 @@
             android:id="@+id/input"
             android:layout_width="117dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@+id/buttum"
-            android:layout_alignBottom="@+id/button"
+
+
             android:layout_marginEnd="3dp"
             android:layout_marginRight="3dp"
-            android:layout_toLeftOf="@+id/button"
-            android:layout_toStartOf="@+id/button"
+
             android:layout_weight="1"
             android:ems="10"
             android:gravity="center"
@@ -51,7 +49,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
-            android:layout_below="@+id/linearLayout"
+
             android:layout_marginTop="0dp"
             android:layout_weight="1"
             android:text="@string/name_buttom" />
@@ -96,7 +94,7 @@
         android:layout_height="154dp"
         android:background="@color/colorPrimaryDark"
         android:layout_toLeftOf="@+id/radio"
-        android:layout_marginTop="@+id/llCheckbox"
+
         android:layout_below="@id/llUp"
         />
 
@@ -124,22 +122,24 @@
         android:id="@+id/radioButton3"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_marginLeft="23dp"
-        android:layout_marginStart="23dp"
-        android:layout_marginTop="8dp"
         android:text="@string/radio"
-        android:layout_alignTop="@+id/llCheckbox"
-        android:layout_toRightOf="@+id/line"
-        android:layout_toEndOf="@+id/line" />
+        android:layout_marginLeft="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_above="@+id/radioButton4"
+        android:layout_toRightOf="@+id/radio"
+        android:layout_toEndOf="@+id/radio"
+        android:layout_marginBottom="18dp" />
 
     <RadioButton
         android:id="@+id/radioButton4"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
+        android:text="@string/radio2"
+
+        android:layout_alignBottom="@+id/line"
         android:layout_alignLeft="@+id/radioButton3"
         android:layout_alignStart="@+id/radioButton3"
-        android:layout_below="@+id/radioButton3"
-        android:text="@string/radio2" />
+        android:layout_marginBottom="6dp" />
 
 
 </RelativeLayout>
