@@ -3,29 +3,37 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:stretchColumns="1">
+        android:stretchColumns="1"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp">
 
         <TableRow>
             <TextView
                 android:layout_width="4dp"
-                android:text="1111"
-                android:padding="17dp"
+                android:text="Cell1"
                 android:gravity="left"/>
             <TextView
-                android:text="layouten_shortcut"
+                android:text="Cell2"
                 android:gravity="left"
                 android:padding="10dip" />
         </TableRow>
 
         <TableRow>
             <TextView
-                android:text="string/table_layout_4_save"
+                android:text="Cell3"
                 android:padding="3dip"
                 android:gravity="left"/>
+
             <TextView
-                android:text="string/table_layout_4_ave_shortcut"
+                android:gravity="left"
+                android:padding="3dip"
+                android:text="Cell4" />
+
+            <TextView
+                android:text="Cell5"
                 android:padding="3dip"
                 android:gravity="left"/>
         </TableRow>
