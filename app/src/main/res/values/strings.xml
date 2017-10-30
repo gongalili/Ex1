@@ -19,5 +19,25 @@
 
     <string name="intro2">This activity demonstrates the use of Grid Layout with embedded image views</string>
 
+    <string name="intro3">This activity demonstrates the use of Table Layout with sppaning colum</string>
+
+    <string name="Cell1">Cell1</string>
+
+    <string name="Cell2">Cell2</string>
+
+    <string name="Cell3">Cell3</string>
+
+    <string name="Cell4">Cell4</string>
+
+    <string name="Cell5">Cell5</string>
+    <string name="Cell6">Cell6</string>
+    <string name="Cell7">Cell7</string>
+    <string name="Cell8">Cell8</string>
+    <string name="Cell9">Cell9</string>
+
+    <string name="intro4">This activity demonstrates the use of Frame Layout with multiple views on top of each other</string>
+
+    <string name="clockT">My Clock</string>
+
 
 </resources>

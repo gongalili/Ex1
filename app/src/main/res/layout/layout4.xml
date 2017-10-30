@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "#3380b3">
+    <AnalogClock
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center|top" />
+
+    <TextView
+        android:id="@+id/clockText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/clockT"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="95dp"
+        android:textStyle="bold"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border_layout4"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center|left"
+        android:text="@string/intro4"
+        android:textColor="#fff"
+        android:gravity="center"/>
+
+
+</FrameLayout>

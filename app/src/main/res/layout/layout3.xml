@@ -2,40 +2,112 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
-    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="300dp"
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:stretchColumns="1"
+        android:text="@string/intro3" />
+
+    <TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:background="#ffffff"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp">
+        android:layout_marginTop="54dp">
 
-        <TableRow>
+
+
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+
+
             <TextView
-                android:layout_width="4dp"
-                android:text="Cell1"
-                android:gravity="left"/>
+                android:text="@string/Cell1"
+                android:layout_weight="1"
+                android:background="@drawable/border_layout3"
+                android:textColor="#000000"
+                android:padding="20dip" android:gravity="center"/>
+
             <TextView
-                android:text="Cell2"
-                android:gravity="left"
-                android:padding="10dip" />
+                android:id="@+id/TextView04"
+                android:text="@string/Cell2"
+                android:layout_weight="1"
+                android:background="@drawable/border_layout3"
+                android:textColor="#000000"
+                android:padding="20dip" android:gravity="center"/>
+
         </TableRow>
 
-        <TableRow>
-            <TextView
-                android:text="Cell3"
-                android:padding="3dip"
-                android:gravity="left"/>
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
 
             <TextView
-                android:gravity="left"
-                android:padding="3dip"
-                android:text="Cell4" />
+                android:text="@string/Cell3"
+                android:layout_weight="1"
+                android:background="@drawable/border_layout3"
+                android:textColor="#000000"
+                android:padding="20dip" android:gravity="center"
+                />
 
             <TextView
-                android:text="Cell5"
-                android:padding="3dip"
-                android:gravity="left"/>
+                android:text="@string/Cell4"
+                android:layout_weight="1"
+                android:background="@drawable/border_layout3"
+                android:textColor="#000000"
+                android:padding="20dip" android:gravity="center"/>
+
+            <TextView
+                android:text="@string/Cell5"
+                android:layout_weight="1"
+                android:background="@drawable/border_layout3"
+                android:textColor="#000000"
+                android:padding="20dip" android:gravity="center"/>
+
+            <TextView
+                android:text="@string/Cell6"
+                android:layout_weight="1"
+                android:background="@drawable/border_layout3"
+                android:textColor="#000000"
+                android:padding="20dip" android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:text="@string/Cell7"
+                android:layout_weight="1"
+                android:background="@drawable/border_layout3"
+                android:textColor="#000000"
+                android:padding="20dip" android:gravity="center"/>
+
+            <TextView
+                android:text="@string/Cell8"
+                android:layout_weight="1"
+                android:background="@drawable/border_layout3"
+                android:textColor="#000000"
+                android:padding="20dip" android:gravity="center"/>
+
+            <TextView
+                android:text="@string/Cell9"
+                android:layout_span="2"
+                android:layout_weight="1"
+                android:background="@drawable/border_layout3"
+                android:textColor="#000000"
+                android:padding="20dip" android:gravity="center"/>
+
         </TableRow>
 
     </TableLayout>
